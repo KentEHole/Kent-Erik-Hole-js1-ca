@@ -50,6 +50,21 @@
             // Light 
             // main
             // Dark 
+        // General Colour
+            // Gray
+                // Light 
+                    const colorGL ='#E8E8E8'; 
+                // Main 
+                    const colorG = '#CFCFCF';
+                // Dark 
+                    const ColorGD = '#A8A8A8';
+            // Red
+                // Light
+                    const colorRL = '#F50C00';
+                // Main 
+                    const colorR = '#E80C00'; 
+                // Dark 
+                    const ColorRD ='#A30900';
     // Default text
         // Error API
             // Error Call API
