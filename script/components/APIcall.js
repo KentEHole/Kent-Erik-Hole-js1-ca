@@ -23,9 +23,16 @@ async function fetchSpaceX(){
         const response = await fetch(URL);
         const json = await response.json();
 
-        console.log(json); 
+        const spaceX = json;
+
+        spaceX.forEach(function (space) {
+            console.log(space.name)
+            
+        });
 
     }catch(error) {
         
     }
 }
+
+fetchSpaceX()
