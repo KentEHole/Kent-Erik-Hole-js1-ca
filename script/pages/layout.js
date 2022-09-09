@@ -50,4 +50,5 @@ function createLayout(APIInfo){
     }
 }
 
+
 fetchSpaceXInfo()
