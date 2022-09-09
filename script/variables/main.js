@@ -5,9 +5,9 @@
 
     // API Values 
         // MAIN API URL 
-            const URL =  '';
+            const URL =  'https://api.spacexdata.com/v4/launches';
         // Secundery API URL
-            const URLSecundery = '';
+            const URLS = 'https://api.spacexdata.com/v4/company';
     // Document Object Model
         // BODY 
             const body = document.querySelector('body');
@@ -50,5 +50,9 @@
             // Light 
             // main
             // Dark 
-        
+    // Default text
+        // Error API
+            // Error Call API
+                let errorAPI = `Fail calling API `;
+            
         
