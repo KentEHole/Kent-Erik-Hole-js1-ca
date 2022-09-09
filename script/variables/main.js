@@ -13,6 +13,12 @@
             const body = document.querySelector('body');
         // HEADER 
             const header =  document.querySelector('header');
+        // NAVIGATION
+            const nav = document.querySelector('nav'); 
+        // NAVIGATION Logo
+            const navLogo = document.querySelector('.nav__logo');
+        // NAVIGATION LINK
+            const navLink =  document.querySelector('.nav__link');
         // MAIN
             const main = document.querySelector('main');
         // FOOTER 
@@ -23,11 +29,13 @@
         // FLICER
             const iconFlickre = '<i class="fa-brands fa-flickr"></i>';
         // BROWSER
-            const iconFlicker = '<i class="fa-solid fa-browser"></i>';
+            const iconWebsit = '<i class="fa-solid fa-house-laptop"></i>';
         // HOME 
             const iconHome = '<i class="fa-solid fa-house"></i>';
         // CONTACT 
             const iconContact = '<i class="fa-solid fa-align-right"></i>';
+        // ASTRONAUT
+            const iconAstronaut = '<i class="fa-solid fa-user-astronaut"></i>';
     // COLOR PALLETS
 
         // Primary Colors 
