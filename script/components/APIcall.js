@@ -15,3 +15,17 @@ async function fetchSpaceXInfo(){
         header.innerHTML += `${errorAPI}`;
     }
 }
+
+// API call for launches at SpaceX
+
+async function fetchSpaceX(){
+    try{
+        const response = await fetch(URL);
+        const json = await response.json();
+
+        console.log(json); 
+
+    }catch(error) {
+        
+    }
+}
