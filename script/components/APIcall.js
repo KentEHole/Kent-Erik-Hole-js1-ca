@@ -26,13 +26,13 @@ async function fetchSpaceX(){
         const spaceX = json;
 
         spaceX.forEach(function (space) {
-            console.log(space.name)
+            console.log(space.name);
             
         });
 
     }catch(error) {
-        
+        console.log(error);
     }
 }
 
-fetchSpaceX()
+fetchSpaceX();
