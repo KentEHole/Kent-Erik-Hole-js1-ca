@@ -22,7 +22,7 @@
         // MAIN
             const main = document.querySelector('main');
             //SpaceX container
-                const spaceXContaier = document.querySelector('.spacex__container"');
+                const spaceXContaier = document.querySelector('.spacex__container');
         // FOOTER 
             const footer = document.querySelector('footer');
     // ICON
