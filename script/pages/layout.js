@@ -1,15 +1,17 @@
-// Using stric mode 
-    'use strice';
-
-
 function createLayout(APIInfo){
     try{
         const SpaceXInfo =  APIInfo; 
+        
 
-    header.innerHTML += `
-        <h2>${SpaceXInfo.name}</h2>
-        <h3>${SpaceXInfo.summary}<h3>
-    `;
+        header.innerHTML += `
+            <div id="header__textbox">
+                <h1>
+                    <span class="heading__main">${siteName}</span>
+                    <br>
+                    <span class="heading__sub">${SpaceXInfo.summary}</span>
+                </h1>
+            </div>
+        `;
 
     footer.innerHTML += `
         <ul>
@@ -17,13 +19,13 @@ function createLayout(APIInfo){
                 <h4>Social Media</h4>
             </li>
             <li>
-                <a href="${SpaceXInfo.links.twitter}" alt="Link to twitter of SpaceX">${iconTwitter}</a>
+                <a href="${SpaceXInfo.links.twitter}" alt="Link to twitter of SpaceX">${iconTwitter} Twitter</a>
             </li>
             <li>
-                <a href="${SpaceXInfo.links.flicker}" alt="Link to Flicker of SpaceX">${iconFlickre}</a> 
+                <a href="${SpaceXInfo.links.flicker}" alt="Link to Flicker of SpaceX">${iconFlickre} Flicker</a> 
             </li>
             <li>
-                <a href="${SpaceXInfo.links.website}" alt="Link to website of SpaceX">${iconWebsit}</a>
+                <a href="${SpaceXInfo.links.website}" alt="Link to website of SpaceX">${iconWebsit} website</a>
             </li>
         </ul>
         <ul>
@@ -50,5 +52,47 @@ function createLayout(APIInfo){
     }
 }
 
+const spaceXPageName = function() {
+        
+    cpc 
 
-fetchSpaceXInfo()
+    if(cpc == '/index.html') {
+        return siteName = 'HOME'; 
+    }if(cpc =='/contact.html') {
+        return siteName = 'CONTACT US';
+    }else {
+        // NEW FUNCTION 
+        return siteName = '';
+    }
+    
+}
+
+function CreateError(Error){
+    const erorrMessage = Error;
+    spaceXLoading.classList.remove('active');
+    spaceXLoading.classList.add('hidden');
+
+    main.innerHTML += `
+    <div class="error" id="error__box">
+        <ul class="Error__List">
+            <li>
+                <h3>${errorMessageHead}</h3>
+            </li>
+            <li>
+                <button id="#error__btn" onclick="closeErrorBox()" type="button"><i class="fa-solid fa-xmark"></i></button>
+            </li>
+        </ul>
+        <p>${errorMessageSub}</p>
+        <p>Error Message: ${erorrMessage}</p>
+</div>
+        `
+}
+
+
+function closeErrorBox(){
+    errorBox.classList.toggle('error');
+    errorBox.classList.add('hidden');
+}
+
+
+spaceXPageName()

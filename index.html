@@ -17,36 +17,37 @@
     <header></header>
     <nav>
         <div class="nav__logo">
-            <img src="./assets/image/logo.png" alt="Image of face look down bake is image of city" srcset="">
+            <h2>SpaceX API</h2>
         </div>
         <div class="nav__liks">
-            <a href="" alt="Home">Home</a>
-            <a hrer="" alt="Contact">Contact</a>
+            <a href="index.html" alt="Home" id="nav__btn">Home</a>
+            <a href="contact.html" alt="Contact" id="nav__btn">Contact</a>
         </div>
     </nav>
     <main>
-        <div class="error">
-            <ul class="Error__List">
-                <li>
-                    <h4>Error</h4>
-                </li>
-                <li>
-                    <button id="error_close"><i class="fa-solid fa-xmark"></i></button>
-                </li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, vitae at. Dignissimos facere voluptas nobis sunt omnis deserunt saepe optio incidunt minima perferendis recusandae quos laborum, ducimus ipsum, illo eum.</p>
+        <div class="active" id="LoadingBox">
+            <h3>Loading...</h3>
+            <div class="loading">
+                <i class="fa-solid fa-satellite"></i> 
+            </div>
         </div>
         <div class="spacex__container"></div>
     </main>
     <footer></footer>
     <!-- Script -->
-        <!-- Script API -->
-            <script src="./script/components/APIcall.js"></script>
         <!-- Script Value -->
             <script src="./script/variables/main.js"></script>
-        <!-- Script Layout -->
-            <script src="./script/pages/layout.js"></script>
+            <!-- Script BTN-->
+            <script src="./script/components/button.js"></script>
+        
+        <!-- Script API -->
+            <script src="./script/components/APIcall.js"></script>
         <!-- Script Home -->
             <script src="./script/pages/home.js"></script>
+        
+        <!-- Script Layout -->
+            <script src="./script/pages/layout.js"></script>
+        
+        
 </body>
 </html>

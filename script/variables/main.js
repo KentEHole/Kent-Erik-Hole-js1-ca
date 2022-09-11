@@ -23,8 +23,40 @@
             const main = document.querySelector('main');
             //SpaceX container
                 const spaceXContaier = document.querySelector('.spacex__container');
+            // Error box 
+                const errorBox = document.querySelector('#error__box');
+            // SpaceX details  
+                const SpaceXD = document.querySelector('.SpaceX__details');
+            // Loading 
+                // Active  
+                    const spaceXLoading = document.querySelector('#LoadingBox');
+                
         // FOOTER 
             const footer = document.querySelector('footer');
+        // Button
+            // Error box close btn
+                const errorboxBTN = document.querySelector('#error__btn')
+        // Form
+          // Form
+          const form = document.querySelector('.form-contact');
+          // Form Input Name
+              const formIN = document.querySelector('#fullName');
+          // Form NameText Required
+              const formINT = document.querySelector('#fName');
+          // Form Input Mail
+              const formIM = document.querySelector('#mail');
+          // Form MailText Required
+              const formEM = document.querySelector('#email');
+          // Form Input Address
+              const formA = document.querySelector('#address');
+          // Form AdressText Required
+              const formAT = document.querySelector('#addressReq');
+          // Form Input Subject
+              const formS =  document.querySelector('#Subject');
+          // Form Subject Required 
+              const formST = document.querySelector('#SubjectReq');
+          // Form Button
+              const formBtn = document.querySelector('#form-submit');
     // ICON
         // TWITTER
             const iconTwitter = '<i class="fa-brands fa-twitter"></i>'; 
@@ -38,46 +70,19 @@
             const iconContact = '<i class="fa-solid fa-align-right"></i>';
         // ASTRONAUT
             const iconAstronaut = '<i class="fa-solid fa-user-astronaut"></i>';
-    // COLOR PALLETS
 
-        // Primary Colors 
-            // Light 
-                const colorPL = '#6384BF';
-            // Main
-                const colorP = '#425880';
-            // Dark
-                const colorPD = '#2E3D59';
-
-        // Secondary color
-            // Light 
-                const colorSL = '';
-            // Main 
-                const colorS = '';
-            // Dark 
-                const colorSD = '';
-        
-        // Triangle Color 
-            // Light 
-            // main
-            // Dark 
-        // General Colour
-            // Gray
-                // Light 
-                    const colorGL ='#E8E8E8'; 
-                // Main 
-                    const colorG = '#CFCFCF';
-                // Dark 
-                    const ColorGD = '#A8A8A8';
-            // Red
-                // Light
-                    const colorRL = '#F50C00';
-                // Main 
-                    const colorR = '#E80C00'; 
-                // Dark 
-                    const ColorRD ='#A30900';
     // Default text
         // Error API
             // Error Call API
                 let errorAPI = `Fail calling API `;
+                let errorMessageHead;
+                let errorMessageSub; 
             
-        
+    const cpc = window.location.pathname;
+    let siteName;
+
+    
+
+    
+    
+    

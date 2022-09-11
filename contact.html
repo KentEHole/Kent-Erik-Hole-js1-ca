@@ -13,9 +13,50 @@
     <!-- Title -->   
         <title>SpaceX API | Contact</title>
 </head>
+
 <body>
     <header></header>
-    <main></main>
+    <nav>
+        <div class="nav__logo">
+            <h2>SpaceX API</h2>
+        </div>
+        <div class="nav__liks">
+            <a href="index.html" alt="Home" id="nav__btn">Home</a>
+            <a href="contact.html" alt="Contact" id="nav__btn">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <div class="spaceXForm">
+            <form class="form-contact">
+                <label for="fullName">Name</label>
+                <input type="text" id="fullName" >
+                <label for="fullName" id="fName">required</label>
+                <br>
+                <labal for="mail">Mail</labal>
+                <input type="text" id="mail" >
+                <label for="mail" id="email">required</label>
+                <br>
+                <labal for="address">address</labal>
+                <input type="text" id="address" >
+                <labal for="address" id="addressReq">minimum length of 25</labal>
+                <br>
+                <labal for="Subject">pour your heart out here</labal>
+                <textarea id="Subject" ></textarea>
+                <labal for="Subject" id="SubjectReq">minimum length of 10</labal>
+                <br>
+                <button type="button" id="form-submit">submit</button>
+            </form>
+        </div>
+    </main>
     <footer></footer>
+    <!-- Java Script -->
+        <!-- Main script -->
+            <script src="./script/variables/main.js"></script>
+        <!-- API Call -->
+            <script src="./script/components/APIcall.js"></script>
+        <!-- Layout -->
+            <script src="./script/pages/layout.js"></script>
+        <!-- contact -->
+            <script src="./script/pages/contact.js"></script>
 </body>
 </html>
